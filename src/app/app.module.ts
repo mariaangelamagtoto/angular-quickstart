@@ -7,10 +7,23 @@ import {
 import {
   AppComponent
 } from './app.component';
+import {
+  IndexComponent
+} from './components/index/index.component';
+/*Routing*/
+import {
+  rootRouting
+} from './components/root.route.component';
 
 @NgModule({
-  imports       : [ BrowserModule],
-  declarations  : [AppComponent],
+  imports       : [
+    BrowserModule,
+    rootRouting
+  ],
+  declarations  : [
+    AppComponent,
+    IndexComponent
+  ],
   bootstrap     : [AppComponent]
 })
 export class AppModule {}
